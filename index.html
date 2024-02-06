@@ -1,0 +1,189 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X Weather</title>
+
+    <link
+      rel="shortcut icon"
+      href="images/Oxygen-Icons.org-Oxygen-Status-weather-showers-day.256.png"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- <img src="images/icons8-sun-48.png" class="newMouse" alt=""> -->
+
+    <nav class="navbar navbar-expand-lg bg-transparent mt-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">X Weather</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link A me-3" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="text-center main pb-4">
+      <h1>
+        Seeing the weather of the whole world <br />with
+        <span>X Weather!</span>
+      </h1>
+
+      <form class="" role="search">
+        <input
+          class="form-control custoum_search mt-3 mx-auto py-2 w-50"
+          type="search"
+          placeholder="Search Here"
+          aria-label="Search"
+        />
+      </form>
+    </div>
+
+    <div class="container mt-5 pb-5">
+      <div class="row gx-5 gy-5 d-flex justify-content-center">
+        <!-- ************************************************************* -->
+        <div class="inner FirstDay col-md-4">
+          <div class="my-card day-one pb-5">
+            <div class="d-flex justify-content-between">
+              <h5 id="dayNameFirstDay">
+                <i class="fa-solid fa-calendar-days pe-2"></i> Monday
+              </h5>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <h3 class="pt-5">
+                <span id="cityName">Cairo</span>
+                <span id="degreeFirstDay">35</span>
+                °C
+              </h3>
+              <div class="mt-4 me-5" id="weatherImgFirstDay">
+                <img src="images/116.png" alt="" />
+              </div>
+            </div>
+
+            <h6 class="mt-4" id="weatherMoodFirstDay">Partly Cloud</h6>
+
+            <ul class="list-unstyled ms-4 mt-4">
+              <li>
+                <i class="fa-solid fa-wind pe-2"></i>wind speed :<span
+                  id="windSpeedFirstDay"
+                  >11 km</span
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-droplet"></i
+                ><span id="degreeOfRainsFirstDay">20</span> %
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ************************************************************* -->
+        <div class="inner NextDay col-md-4">
+          <div class="my-card day-one pb-5">
+            <div class="d-flex justify-content-between">
+              <h5 id="dayNameSecondDay">
+                <i class="fa-solid fa-calendar-days pe-2"></i> Tuesday
+              </h5>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <h3 class="pt-5">
+                <span id="cityName">Cairo</span>
+                <span id="degreeSecondDay">35°C</span>
+              </h3>
+              <div class="mt-4 me-5">
+                <img id="weatherImgSecondDay" src="images/116.png" alt="" />
+              </div>
+            </div>
+
+            <h6 class="mt-4" id="weatherMoodSecondDay">Partly Cloud</h6>
+
+            <ul class="list-unstyled ms-4 mt-4">
+              <li>
+                <i class="fa-solid fa-wind pe-2"></i>wind speed :<span
+                  id="windSpeedSecondDay"
+                  >11 km</span
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-cloud-rain pe-2"></i
+                ><span id="degreeOfRainsSecondDay">20%</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ************************************************************* -->
+        <div class="inner ThirdDay col-md-4">
+          <div class="my-card pb-5">
+            <div class="d-flex justify-content-between">
+              <h5 id="dayNameThirdDay">
+                <i class="fa-solid fa-calendar-days pe-2"></i> Monday
+              </h5>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <h3 class="pt-5">
+                <span id="cityName">Cairo</span>
+                <span id="degreeThirdDay">35°C</span>
+              </h3>
+              <div class="mt-4 me-5">
+                <img id="weatherImgThirdDay" src="images/116.png" alt="" />
+              </div>
+            </div>
+
+            <h6 class="mt-4" id="weatherMoodThirdDay">Partly Cloud</h6>
+
+            <ul class="list-unstyled ms-4 mt-4">
+              <li>
+                <i class="fa-solid fa-wind pe-2"></i>wind speed :<span
+                  id="windSpeedThirdDay"
+                  >11 km</span
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-droplet"></i
+                ><span id="degreeOfRainsThirdDay">20%</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ********************************************************************** -->
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
